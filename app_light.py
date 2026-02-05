@@ -6,7 +6,7 @@ import os
 # =========================
 # CONFIGURACIÓN OPENAI
 # =========================
-client = OpenAI(api_key="OPENAI_API_KEY")
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 st.set_page_config(
     page_title="HMI Analyzer – 8 Puentes",
@@ -351,5 +351,6 @@ if uploaded_file:
                     """,
                     unsafe_allow_html=True
                 )
+
 
 
